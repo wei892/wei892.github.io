@@ -2,6 +2,7 @@ import express from "express"
 import cors from "cors"
 import tool from "./api/tool.route.js"
 
+
 const app = express()
 
 app.use(cors())

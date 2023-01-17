@@ -18,29 +18,24 @@
         <h1> <a href=#  id="title"> SMS Tool</a></h1>
     </div>
     
-    <div class="list">
-        <div id = heading>
-            <h2> Year </h2>
-            
-        </div>
 
-
-        <div id="listOfYear">
-            <section>
-                <!--
-                    this will include the files + links that could be clicked on for each region
-                -->
-                <a href="regions\regions.html" id="linktoRegions"> 
-                    Year Ex 
-                </a>
-            </section>
-        </div>
+    <div id = heading>
+        <h2> Year </h2>
+        
     </div>
 
-    <form id="container">
-        <label for="newRegion"> Add New Year: </label>
-        <input type = "text" id = "regionName">
-        <input type = "submit" value="Add">
+    <!-- <div class="listOfYear">
+        <section>
+            <a href="regions\regions.html" id="linktoRegions"> 
+            Year Ex 
+            </a>
+        </section>
+    </div> -->
+
+    <form id="yearList" action="homepage.html" method="GET">
+        <label for="newYear"> Add New Year: </label>
+        <input type = "text" id = "years" name="year">
+        <button> Submit </button>
     </form>
 
 </body>

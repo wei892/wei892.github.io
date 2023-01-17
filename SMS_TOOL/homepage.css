@@ -22,11 +22,11 @@ body {
     color: white;
 }
 
-#listOfRegions {
+.listOfYear {
     padding: 20px;
 }
 
-#listOfRegions #R1 {
+#listOfYear #R1 {
     color: white;
 }
 #container {
