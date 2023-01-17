@@ -1,13 +1,13 @@
-import ReviewsDAO from "../dao/toolDAO.js"
+import toolsDAO from "../dao/toolDAO.js"
 
 export default class toolController {
-  static async apiPostTool(req, res, next) {
+  static async apiPostYear(req, res, next) {
     try {
-    //   const movieId = parseInt(req.body.movieId)
+        const yearID = req.body.yearID;
     //   const review = req.body.review
     //   const user = req.body.user
     //   console.log('movieid', movieId)
-    //   const reviewResponse = await ReviewsDAO.addReview(
+    //   const reviewResponse = await toolsDAO.addReview(
     //     movieId,
     //     user,
     //     review
@@ -18,7 +18,7 @@ export default class toolController {
     }
   }
 
-  static async apiGetReview(req, res, next) {
+  static async apiGetYear(req, res, next) {
     try {
     //   let id = req.params.id || {}
     //   let review = await ReviewsDAO.getReview(id)
