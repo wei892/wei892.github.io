@@ -1,0 +1,69 @@
+.homepage{
+    text-align: center;
+    float: left;
+    padding: 10px;
+    background-color: gray;
+    border: 10px;
+    border-radius: 5px;
+}
+
+.regionList {
+    text-align: center;
+    float: left;
+    padding: 10px;
+    background-color: gray;
+    border: 10px;
+    border-radius: 5px;
+}
+
+.countryList{
+    text-align: center;
+    float: left;
+    padding: 10px;
+    background-color: gray;
+    border: 10px;
+    border-radius: 5px;
+}
+
+.title{
+    text-align: center;
+}
+
+table{
+    margin: auto;
+    width: 1000px;
+    text-align: center;
+}
+
+.lvl5{
+    background-color: black;
+    height: 100px;
+}
+
+.black{
+    width: 100px;
+}
+.lvl4{
+    background-color: red;
+    height: 100px;
+}
+
+.lvl3{
+    background-color: orange;
+    height: 100px;
+}
+
+.lvl2{
+    background-color: yellow;
+    height: 100px;
+}
+
+.lvl1{
+    background-color: green;
+    height: 100px;
+}
+
+.num{
+    background-color: white;
+    width: 20px;
+}
