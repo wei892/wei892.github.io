@@ -4,9 +4,9 @@ import mongodb from "mongodb";
 //import toolsDAO from "./dao/toolsDAO.js";
 
 const MongoClient = mongodb.MongoClient
-const uri = "mongodb+srv://ircsmstool:<password>@cluster0.tbejsis.mongodb.net/?retryWrites=true&w=majority";
+const uri = "mongodb+srv://ircsmstool:7tAnVRaWbEOx1FNW@cluster0.tbejsis.mongodb.net/?retryWrites=true&w=majority";
 
-const port = 8000;
+const port = 8080;
 MongoClient.connect(
     uri,
     {
@@ -19,8 +19,8 @@ MongoClient.connect(
       process.exit(1)
     })
     .then(async client => {
-      await toolsDAO.injectDB(client)
+      //await toolsDAO.injectDB(client)
       app.listen(port, () => {
-        console.log(`listening on port ${port}`)
+        console.log(`https://localhost:${port}`)
       })
     });
