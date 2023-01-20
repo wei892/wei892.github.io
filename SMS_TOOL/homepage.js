@@ -1,18 +1,48 @@
-//counts number of years
-let numYears = 0;
+const APILINK = 'http://localhost:8000/api/v1/tool/';
 
-// let year = document.getElementById('Div');
-// new URLSearchParams(window.location.search).forEach((value, year) => {
-//     year.append('${year}: ${value}');
-//     year.append(homepage.html.createElement('br'));
-// });
+const list = document.getElementById("list");
+const addNew = document.getElementById("addNew");
 
-// year.setAttribute('class', 'listOfYear');
+const div_new = document.createElement("div");
 
-//let this be array of years tracked
-//let years = [];
-//code for years to push back value after it is added
+div_new.innerHTML = `
+    <div class="column">
+      <div class="card">
+        Add Year 
+        <input type="text" id="yearList" value=""> 
+        <a href="#" onclick="saveYear('new_year')" class="button"> Save </a>
+      </div>
+    </div>
+  </div>
+`
+addNew.appendChild(div_new)
 
 
-//goal for this page
-//connect an array to the table of the homepage that will
+returnYears(APILINK);
+function returnYear(url){
+    fetch(url).then(res => res.json())
+    .then (function(data){
+        console.log(data.results)
+        data.results.forEach(year => {
+            const yearNum = document.createElement('div');
+            yearNum.innerHTML =`
+            <div class="column">
+              <div class="card" id="${year._id}">
+              <p>${year.year} <a href="#"onclick="editReview('${year._id}','${year.year}'')">Edit</a> 
+              <a href="#" onclick="deleteReview('${year._id}')">Delete</a> 
+              </p>
+              </div>
+            </div>
+          </div>
+        `
+            list.appendChild("yearNum");
+        });
+    });
+}
+
+// // form.addEventListener("submit", (e) => {
+// //     e.preventDefault();
+
+    
+// // })
+

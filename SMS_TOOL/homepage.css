@@ -1,13 +1,14 @@
 *{
     text-align: center;
 }
+
 body {
     color: aliceblue;
     background-color: rgb(32, 33, 34);
 }
 
 
-.titleBackground {
+.topnav{
     border-radius: 10px;
     padding: 5px;
     background-color: yellow;
@@ -17,23 +18,28 @@ body {
     color: black;
 }
 
-#linktoRegions {
+
+
+.column {
+    width: 350px;
+    padding: 15px;
+    margin: auto;
+    background-color: gray;
+    border-radius: 5%;
+}
+
+.card{
+    margin: auto;
+    text-align: center;
+  }
+
+  a{
+    color: white;
     text-decoration: none;
-    color: white;
-}
+  }
 
-.listOfYear {
-    padding: 20px;
-}
-
-#listOfYear #R1 {
-    color: white;
-}
-#container {
-    padding: 20px;
-}
-
-#template #templatelink {
-    padding: 20px;
-    color: rgb(255, 255, 255);
-}
+  #yearList{
+    margin: auto;
+    padding: 5px;
+  }
+  
