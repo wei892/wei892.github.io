@@ -30,7 +30,7 @@ function returnYears(url) {
 					<div class="card">
 		 			<b> ${years.year} </b> <br>
 					<div class="link">
-						<a href="region.html?year=${years.year}"> Link to Regions for ${years.year} </a> <br>
+						<a href="\regions\regions.html?year=${years.year}"> Link to Regions for ${years.year} </a> <br>
 	 				<div>
 		 			<div class = "buttons">
 						<a href = "#" onclick="editYear('${years._id}','${years.year}')" >Edit</a>
