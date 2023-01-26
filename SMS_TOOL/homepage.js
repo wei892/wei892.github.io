@@ -42,7 +42,7 @@ function returnYears(url) {
 				list.appendChild(div_card);
 			});
 		});
-}
+} 
 
 function editYear(id, year) {
   const element = document.getElementById(id);
